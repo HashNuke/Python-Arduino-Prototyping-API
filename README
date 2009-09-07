@@ -1,7 +1,8 @@
 Python Arduino Prototyping API (version: 0.1)
 =====================================================
 
-The Python Arduino Prototyping API helps you to quickly prototype Arduino programs without having to repeatedly load the program to the Arduino board.
+The Python Arduino Prototyping API helps you to quickly prototype Arduino programs, 
+without having to repeatedly load the program to the Arduino board.
 
 Setup:
 1.) Load prototype.pde onto your Arduino dev board.
@@ -29,7 +30,8 @@ Misc functions:
 1.) Arduino.turnOff()
     sets all the pins to low state
 2.) Arduino.close()
-    closes serial connection. Using this makes sure that you won't have to disconnect & reconnect the Arduino again to recover the serial port.
+    closes serial connection. Using this makes sure that you won't have
+    to disconnect & reconnect the Arduino again to recover the serial port.
 
 -----------------------------------------------------
 USAGE EXAMPLE:
@@ -41,7 +43,7 @@ from arduino import Arduino
 
 import time
 
-#specify the port as an ardument
+#specify the port as an argument
 my_board = Arduino('/dev/ttyUSB1')
 
 #declare output pins as a list/tuple
