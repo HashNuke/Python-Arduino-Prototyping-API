@@ -1,5 +1,5 @@
-Python Arduino Prototyping API (version: 0.1)
-=====================================================
+h1. Python Arduino Prototyping API (version: 0.1)
+
 
 The Python Arduino Prototyping API helps you to quickly prototype Arduino programs, 
 without having to repeatedly load the program to the Arduino board.
