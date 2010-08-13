@@ -64,8 +64,9 @@ class Arduino:
         self.__sendData(hex_value[1])
         return True
 
-    def analogRead(self, pin, value):
+    def analogRead(self, pin):
         self.__sendData('4')
+        self.__sendPin(pin)
         return self.__getData()
 
     def turnOff(self):
