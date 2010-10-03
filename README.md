@@ -1,7 +1,7 @@
 # Python Arduino Prototyping API (version: 0.5)
 
-> &copy; 2009-2010 Akash Manohar <akash@akash.im>
-> Licensed under the MIT License
+> &copy; 2009-2010 Akash Manohar J <akash@akash.im>
+> under the MIT License
 
 The Python Arduino Prototyping API helps you to quickly prototype Arduino programs, 
 without having to repeatedly load the program to the Arduino board.
@@ -14,29 +14,25 @@ without having to repeatedly load the program to the Arduino board.
 
 ## Methods
 
+*Arduino.output(list_of_output_pins)* - set the output pins
 
-### Arduino.output(list_of_output_pins)
+**Digital I/O**
 
-**Digital I/O functions**
+1. *Arduino.setHigh(pin_number)*
+2. *Arduino.setLow(pin_number)*
+3. *Arduino.getState(pin_number)*
+4. *Arduino.getState()* - returns true if pin state is high, else it returns false.
 
-1. Arduino.setHigh(pin_number)
-2. Arduino.setLow(pin_number)
-3. Arduino.getState(pin_number)
-    getState() returns true if pin state is high, else it returns false.
+**Analog I/O**
 
-**Analog I/O functions**
+1. *Arduino.analogRead(pin_number)* - returns the analog value
+2. *Arduino.analogRead(pin_number, value)* - sets the analog value
 
-1. Arduino.analogRead(pin_number)
-    returns the analog value
-2. Arduino.analogRead(pin_number, value)
-    sets the analog value
+**Misc**
 
-**Misc functions**
-1.) Arduino.turnOff()
-    sets all the pins to low state
-2.) Arduino.close()
-    closes serial connection. Using this makes sure that you won't have
-    to disconnect & reconnect the Arduino again to recover the serial port.
+1.) *Arduino.turnOff()* - sets all the pins to low state
+
+2.) *Arduino.close()* - closes serial connection. Using this makes sure that you won't have to disconnect & reconnect the Arduino again to recover the serial port.
 
 ## Usage example
 
