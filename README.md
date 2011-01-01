@@ -36,7 +36,6 @@ without having to repeatedly load the program to the Arduino board.
 
 ## Usage example
 
-
         #the blink program
 
         #import the lib
@@ -56,4 +55,5 @@ without having to repeatedly load the program to the Arduino board.
             my_board.setHigh(13)
             time.sleep(1)
             my_board.setLow(13)
+            time.sleep(1)
             i+=1
