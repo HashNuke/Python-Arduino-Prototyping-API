@@ -2,7 +2,7 @@
 
 import serial, time
 
-class Arduino:
+class Arduino(object):
 
     __OUTPUT_PINS = -1
 
@@ -84,4 +84,3 @@ class Arduino:
         #this fixes the problem of port getting locked or unrecoverable in some linux systems
         self.serial.close()
     """
-
