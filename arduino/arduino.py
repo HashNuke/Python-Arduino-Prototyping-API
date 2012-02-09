@@ -38,12 +38,17 @@ class Arduino(object):
 
     def analogWrite(self, pin, value):
         self.__sendData('3')
+        self.__sendPin(pin)
         hex_value = hex(value)[2:]
         if(len(hex_value)==1):
-            self.__sendData('0')
+            hex1 = '0'
+            hex2 = hex_value[0]
         else:
-            self.__sendData(hex_value[0])
-        self.__sendData(hex_value[1])
+            hex1 = hex_value[0]
+            hex2 = hex_value[1]
+        
+        self.__sendData(hex1)
+        self.__sendData(hex2)
         return True
 
     def analogRead(self, pin):
