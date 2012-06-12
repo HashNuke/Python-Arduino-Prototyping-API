@@ -26,7 +26,7 @@ without having to repeatedly load the program to the Arduino board.
 **Analog I/O**
 
 1. *Arduino.analogRead(pin_number)* - returns the analog value
-2. *Arduino.analogRead(pin_number, value)* - sets the analog value
+2. *Arduino.analogWrite(pin_number, value)* - sets the analog value
 
 **Misc**
 
